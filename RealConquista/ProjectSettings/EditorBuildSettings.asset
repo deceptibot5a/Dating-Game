@@ -11,4 +11,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameScene.unity
     guid: 895f0b88ae0267e4599b51e3572b0a14
+  - enabled: 1
+    path: Assets/Scenes/Princesxs/InteractFuego.unity
+    guid: c9534e2c2108bb043862aaf3188067ff
+  - enabled: 1
+    path: Assets/Scenes/Princesxs/InteractAgua.unity
+    guid: 3753cc5b87a93ef4c98278e2d91a42fb
+  - enabled: 1
+    path: Assets/Scenes/Princesxs/InteractLuz.unity
+    guid: 93d7bfdfff354eb42a17af11759fdb7f
+  - enabled: 1
+    path: Assets/Scenes/Princesxs/InteractOscuro.unity
+    guid: e21ad49fc2e59554ba7a3dc1487cdb29
+  - enabled: 1
+    path: Assets/Scenes/Princesxs/InteractMecanica.unity
+    guid: 15f86eb7d33f30e4b962400e83da0e8f
   m_configObjects: {}
