@@ -12,11 +12,19 @@ public class InteractionManager : MonoBehaviour
     object valorVariable;
     private bool isBloqued = false;
     public Button miBoton;
+    float diaAnterior = 1;
 
     void Update() {
         valorVariable = flowchart.GetVariable(nombreVariable).GetValue();
         float valorDia = Convert.ToSingle(valorVariable);
-        if (valorDia >= 8 && isBloqued == false) BloquearInteraccion();
+        
+        if (valorDia > diaAnterior) {
+            if (diaAnterior != valorDia) {
+                diaAnterior = valorDia;
+                DiasGlobales.transcurso += 1;
+            }
+        }
+        if ((valorDia >= 8 && isBloqued == false) || DiasGlobales.transcurso >= 15) BloquearInteraccion();
     }
 
     public void BloquearInteraccion() {
