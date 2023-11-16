@@ -14,8 +14,6 @@ public class SliderManager : MonoBehaviour
 
     void Update() {
         valorVariable = flowchart.GetVariable(nombreVariable).GetValue();
-        //Debug.Log((float)valorVariable);
         miSlider.value = Convert.ToSingle(valorVariable)*0.01f;
-        Debug.Log(miSlider.value);
     }
 }
